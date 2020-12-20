@@ -32,7 +32,7 @@ const AddCity = () => {
         <div class="form-group">
           <label for="formGroupExampleInput2">Latitude</label>
           <input
-            type="number"
+            type="text"
             class="form-control col-form-label-lg"
             id="formGroupExampleInput2"
             placeholder="Enter Latitude"
@@ -41,7 +41,7 @@ const AddCity = () => {
         <div class="form-group">
           <label for="formGroupExampleInput2">Longitude</label>
           <input
-            type="number"
+            type="text"
             class="form-control col-form-label-lg"
             id="formGroupExampleInput2"
             placeholder="Enter Longitude"
