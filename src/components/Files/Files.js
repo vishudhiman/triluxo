@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
 const useStyles = makeStyles({
   container: {
     width: "800px",
@@ -15,37 +14,38 @@ const useStyles = makeStyles({
   },
 });
 
-const AddCity = () => {
+const Files = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <h1 className={classes.h1}>Add City Form</h1>
+      <h1 className={classes.h1}>Add File Form</h1>
       <form data-ng-init="resp()">
         <div class="form-group">
-          <label for="formGroupExampleInput">City Name</label>
+          <label for="formGroupExampleInput">Phone No</label>
           <input
-            type="text"
+            type="number"
+            maxLength="10"
             class="form-control col-form-label-lg"
             id="formGroupExampleInput"
-            placeholder="Enter City Name"
+            placeholder="Enter Phone No"
           />
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">Latitude</label>
+          <label for="formGroupExampleInput2">File Name </label>
           <input
             type="text"
             class="form-control col-form-label-lg"
             id="formGroupExampleInput2"
-            placeholder="Enter Latitude"
+            placeholder="Enter File Name"
           />
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">Longitude</label>
+          <label for="formGroupExampleInput2">File Url</label>
           <input
             type="text"
             class="form-control col-form-label-lg"
             id="formGroupExampleInput2"
-            placeholder="Enter Longitude"
+            placeholder="Enter File Url"
           />
         </div>
         <button type="submit" class="btn btn-primary">
@@ -59,4 +59,4 @@ const AddCity = () => {
   );
 };
 
-export default AddCity;
+export default Files;

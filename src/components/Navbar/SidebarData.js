@@ -41,4 +41,10 @@ export const SidebarData = [
     icon: <FaIcons.FaRegBuilding />,
     cName: "nav-text",
   },
+  {
+    title: "Files",
+    path: "/files",
+    icon: <FaIcons.FaRegBuilding />,
+    cName: "nav-text",
+  },
 ];

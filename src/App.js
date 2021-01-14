@@ -19,6 +19,10 @@ import Attractions from "./pages/Attractions";
 import AddAttraction from "./components/Attractions/AddAttraction";
 import EditAttraction from "./components/Attractions/EditAttraction";
 import ViewAttractions from "./components/Attractions/ViewAttractions";
+// Files
+import Files from "./components/Files/Files";
+import FilePage from "./pages/FilePage";
+import AllFiles from "./components/Files/AllFiles";
 
 function App() {
   return (
@@ -63,6 +67,11 @@ function App() {
             exact
             component={ViewAttractions}
           />
+        </Switch>
+        <Switch>
+          <Route path="/files" exact component={FilePage} />
+          <Route path="/files/addFile" exact component={Files} />
+          <Route path="/files/viewFiles" exact component={AllFiles} />
         </Switch>
       </Router>
     </div>
