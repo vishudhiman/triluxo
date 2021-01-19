@@ -3,23 +3,25 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   container: {
-    width: "80%",
-    marginLeft: "18%",
+    width: "82%",
+    minHeight: "100%",
+    marginLeft: "16%",
     marginTop: "5%",
     boxSizing: "border-box",
   },
   Cards: {
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "space-around",
     marginTop: "3%",
   },
 });
 const Cards = () => {
   return (
-    <div class="card" style={{ width: "18rem" }}>
+    <div class="card" style={{ width: "20rem" }}>
       <div class="card-body">
         <h5 class="card-title">File Name</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Phone No</h6>
+        {/* <h6 class="card-subtitle mb-2 text-muted">Phone No</h6> */}
         <p class="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -62,6 +64,10 @@ const AllFiles = () => {
         </div>
       </div>
       <div className={classes.Cards}>
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
         <Cards />
         <Cards />
         <Cards />
