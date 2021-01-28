@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   container: {
     width: "82%",
-    minHeight: "100%",
+    Height: "100%",
     marginLeft: "16%",
     marginTop: "5%",
     boxSizing: "border-box",
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 });
 const Cards = () => {
   return (
-    <div class="card" style={{ width: "20rem" }}>
+    <div class="card" style={{ width: "20rem", marginBottom: "10px" }}>
       <div class="card-body">
         <h5 class="card-title">File Name</h5>
         <p class="card-text">
