@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     marginTop: "5%",
     boxSizing: "border-box",
   },
-  Cards: {
+  cards: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
@@ -21,7 +21,6 @@ const Cards = () => {
     <div class="card" style={{ width: "20rem" }}>
       <div class="card-body">
         <h5 class="card-title">File Name</h5>
-        {/* <h6 class="card-subtitle mb-2 text-muted">Phone No</h6> */}
         <p class="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -63,7 +62,7 @@ const AllFiles = () => {
           </div>
         </div>
       </div>
-      <div className={classes.Cards}>
+      <div className={classes.cards}>
         <Cards />
         <Cards />
         <Cards />
